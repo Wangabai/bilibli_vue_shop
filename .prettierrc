@@ -1,0 +1,6 @@
+{
+    // 格式化代码
+    "semi":false,
+    // 单双引号
+    "singleQuote":true
+}

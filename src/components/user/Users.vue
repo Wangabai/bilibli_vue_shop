@@ -172,7 +172,6 @@
           @click="addUser"
         >确 定</el-button>
       </span>
-      </el-form>
     </el-dialog>
 
     <!-- 修改用户的对话框 -->

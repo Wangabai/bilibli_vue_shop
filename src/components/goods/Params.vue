@@ -467,7 +467,7 @@ export default {
     },
     // 将对attr_vals的操作，保存到数据库
     async saveAttrVals(row) {
-      const { data: res } = await this.$http.put(`categories/${this.cateId}/attributes/${row.attr_id}`, { attr_name: row.attr_name, attr_sel: row.attr_sel, attr_vals: row.attr_vals.join(',') })
+      const { data: res } = await this.$http.put(`categories/${this.cateId}/attributes/${row.attr_id}`, { attr_name: row.attr_name, attr_sel: row.attr_sel, attr_vals: row.attr_vals.join(' ') })
 
       if (res.meta.status !== 200) return this.$message.error('修改参数项失败！')
       this.$message.success('修改参数项成功！')
